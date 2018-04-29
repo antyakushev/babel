@@ -118,7 +118,7 @@ function resolveStandardizedName(
     } catch (e2) {}
 
     if (resolvedBabel) {
-      e.message += `\n- Did you mean "@babel/${name}"?`;
+      e.message += `\n- Did you mean "@babel/${type}-${name}"?`;
     }
 
     let resolvedOppositeType = false;
